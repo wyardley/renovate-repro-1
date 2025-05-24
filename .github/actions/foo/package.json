@@ -1,0 +1,26 @@
+{
+  "name": "@wyardley/foo",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint *.js **/*.js",
+    "prettier": "prettier -c ./",
+    "prettier:fix": "prettier -w ./",
+    "test": "ava"
+  },
+  "type": "module",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ava": "6.3.0",
+    "eslint": "8.57.1",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-ava": "14.0.0",
+    "eslint-plugin-import": "2.31.0",
+    "prettier": "3.5.3"
+  },
+  "dependencies": {
+    "@actions/core": "1.11.1",
+    "@actions/github": "6.0.1"
+  }
+}

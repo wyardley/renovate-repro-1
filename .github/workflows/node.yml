@@ -1,0 +1,19 @@
+---
+name: node
+on:
+  pull_request:
+      paths:
+        - .github/actions/foo/**
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.15
+          cache-dependency-path: .github/actions/foo/package-lock.json
+      - name: npm ci
+        working-directory: .github/actions/terraform_title_checker
+        run: npm ci
