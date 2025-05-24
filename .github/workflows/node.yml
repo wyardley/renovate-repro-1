@@ -15,5 +15,5 @@ jobs:
           node-version: 22.15
           cache-dependency-path: .github/actions/foo/package-lock.json
       - name: npm ci
-        working-directory: .github/actions/terraform_title_checker
+        working-directory: .github/actions/foo
         run: npm ci
