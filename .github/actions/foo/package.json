@@ -12,7 +12,7 @@
   "type": "module",
   "license": "UNLICENSED",
   "devDependencies": {
-    "ava": "6.3.0",
+    "ava": "6.4.0",
     "eslint": "8.57.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-ava": "14.0.0",
